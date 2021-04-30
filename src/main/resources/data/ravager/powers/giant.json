@@ -1,0 +1,45 @@
+{
+  "type": "origins:action_on_callback",
+  "entity_action_added": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:execute_command",
+        "command": "scale set pehkui:height 1.25 @s",
+        "permission_level": 4
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "scale set pehkui:width 1.25 @s",
+        "permission_level": 4
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "scale set pehkui:reach 1.0164 @s",
+        "permission_level": 4
+      }
+    ]
+  },
+  "entity_action_removed": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:execute_command",
+        "command": "scale set pehkui:height 1 @s",
+        "permission_level": 4
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "scale set pehkui:width 1 @s",
+        "permission_level": 4
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "scale set pehkui:reach 1 @s",
+        "permission_level": 4
+      }
+    ]
+  },
+  "name": "Giant",
+  "description": "You are 2.5 times the size of a normal human."
+}

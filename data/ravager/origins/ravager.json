@@ -1,0 +1,19 @@
+{
+  "powers": [
+    "ravager:giant",
+    "ravager:tough",
+    "ravager:heavyweight",
+    "ravager:no_offhand",
+    "ravager:illager",
+    "ravager:enemy_of_the_state",
+    "ravager:ram",
+    "ravager:ram_knockback",
+    "ravager:ram_cooldown",
+    "ravager:ram_duration"
+  ],
+  "icon": "minecraft:iron_horse_armor",
+  "order": 0,
+  "impact": 2,
+  "name": "Ravager",
+  "description": "Ravagers have incredible strength and durability. However, villagers fear them."
+}

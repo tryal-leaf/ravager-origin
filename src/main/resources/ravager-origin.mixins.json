@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "package": "ravager.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "BlockItemMixin",
+    "ClientPlayerInteractionManagerMixin",
+    "HorseBaseEntityMixin",
+    "IronGolemEntityMixin",
+    "ItemStackMixin",
+    "PigEntityMixin",
+    "ServerPlayerInteractionManagerMixin",
+    "StriderEntityMixin",
+    "VillagerEntityMixin"
+  ],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

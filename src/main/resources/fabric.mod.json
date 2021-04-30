@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "ravager-origin",
+  "version": "${version}",
+  "name": "RavagerOrigin",
+  "description": "An add-on to the Origins mod. Enables the Ravager origin.",
+  "authors": [
+    "tryal-leaf"
+  ],
+  "contributors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/ravager-origin/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [],
+    "client": [],
+    "server": []
+  },
+  "mixins": [
+    "ravager-origin.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.16.x",
+    "origins": ">=0.6.0",
+    "pehkui": ">=2.0.0"
+  }
+}

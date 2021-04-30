@@ -1,0 +1,102 @@
+{
+  "type": "origins:multiple",
+  "add_faction": {
+    "type": "origins:action_over_time",
+    "interval": 200,
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "command": "team join ravager @s",
+          "permission_level": 4
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "team join ravager @e[type=minecraft:evoker,team=!angryAtRavager]",
+          "permission_level": 4
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "team join ravager @e[type=minecraft:vindicator,team=!angryAtRavager]",
+          "permission_level": 4
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "team join ravager @e[type=minecraft:pillager,team=!angryAtRavager]",
+          "permission_level": 4
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "team join ravager @e[type=minecraft:ravager,team=!angryAtRavager]",
+          "permission_level": 4
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "team join ravager @e[type=minecraft:witch,team=!angryAtRavager]",
+          "permission_level": 4
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "team join ravager @e[type=minecraft:vex,team=!angryAtRavager]",
+          "permission_level": 4
+        }
+      ]
+    }
+  },
+  "remove_faction": {
+    "type": "origins:target_action_on_hit",
+    "target_condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:entity_group",
+          "group": "illager"
+        },
+        {
+          "type": "origins:entity_type",
+          "entity_type": "minecraft:ravager"
+        },
+        {
+          "type": "origins:entity_type",
+          "entity_type": "minecraft:witch"
+        },
+        {
+          "type": "origins:entity_type",
+          "entity_type": "minecraft:vex"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "command": "team join angryAtRavager @e[team=ravager,distance=..16]",
+          "permission_level": 4
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "team leave ravager @e[team=ravager,distance=..16]",
+          "permission_level": 4
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "team leave angryAtRavager @s",
+          "permission_level": 4
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "team join ravager @s",
+          "permission_level": 4
+        }
+      ]
+    },
+    "cooldown": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "name": "Illager",
+  "description": "All Illager-aligned mobs will not attack you unless provoked."
+}
