@@ -1,4 +1,4 @@
-package ravager.power;
+package tryalleaf.ravager.power;
 
 import io.github.apace100.origins.power.Power;
 import io.github.apace100.origins.power.PowerType;

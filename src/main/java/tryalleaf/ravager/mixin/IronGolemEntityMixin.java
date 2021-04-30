@@ -1,4 +1,4 @@
-package ravager.mixin;
+package tryalleaf.ravager.mixin;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.FollowTargetGoal;
@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import ravager.power.RavagerPowers;
+import tryalleaf.ravager.power.RavagerPowers;
 
 @Mixin(IronGolemEntity.class)
 public abstract class IronGolemEntityMixin extends GolemEntity {

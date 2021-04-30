@@ -1,34 +1,29 @@
-package ravager.mixin;
+package tryalleaf.ravager.mixin;
 
-import io.github.apace100.origins.component.OriginComponent;
-import io.github.apace100.origins.power.PreventBlockUsePower;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.server.network.ServerPlayerInteractionManager;
+import net.minecraft.client.network.ClientPlayerEntity;
+import net.minecraft.client.network.ClientPlayerInteractionManager;
+import net.minecraft.client.world.ClientWorld;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
-import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import ravager.power.RavagerPowers;
+import tryalleaf.ravager.power.RavagerPowers;
 
-@Mixin(ServerPlayerInteractionManager.class)
-public class ServerPlayerInteractionManagerMixin {
+@Mixin(ClientPlayerInteractionManager.class)
+public class ClientPlayerInteractionManagerMixin {
 
   @Inject(
       method = "interactBlock",
       at = @At(
           value = "INVOKE",
-          target = "Lnet/minecraft/server/network/ServerPlayerEntity;shouldCancelInteraction()Z"),
+          target = "Lnet/minecraft/client/network/ClientPlayerEntity;shouldCancelInteraction()Z"),
       cancellable = true)
   public void preventBlockInteraction(
-      ServerPlayerEntity player,
-      World world,
-      ItemStack stack,
+      ClientPlayerEntity player,
+      ClientWorld world,
       Hand hand,
       BlockHitResult hitResult,
       CallbackInfoReturnable<ActionResult> cir) {

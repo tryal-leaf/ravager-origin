@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "ravager.mixin",
+  "package": "tryalleaf.ravager.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "BlockItemMixin",
