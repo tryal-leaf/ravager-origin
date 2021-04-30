@@ -1,2 +1,2 @@
 team add ravager
-team add ravager-angry-at
+team add ravager-angry
