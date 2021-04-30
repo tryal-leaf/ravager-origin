@@ -2,13 +2,15 @@
   "schemaVersion": 1,
   "id": "ravager-origin",
   "version": "${version}",
-  "name": "RavagerOrigin",
+  "name": "Ravager Origin",
   "description": "An add-on to the Origins mod. Enables the Ravager origin.",
   "authors": [
     "tryal-leaf"
   ],
   "contributors": [],
-  "contact": {},
+  "contact": {
+    "sources": "https://github.com/tryal-leaf/ravager-origin"
+  },
   "license": "MIT",
   "icon": "assets/ravager-origin/icon.png",
   "environment": "*",
