@@ -13,7 +13,7 @@ An add-on to the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins)
 > 🟡 **Giant:** You are 2.5 times the size of a normal human.
 >
 > 🔴 **Four-Legged:** Your clumsy hands are unable to use more than one item at a time. You can't use any item in your offhand.  
-> 🔴 **Enemy of the State:** Villagers refuse to trade with you, and Iron Golems will attack on sight. Iron Golems that you spawn will not attack you.  
+> 🔴 **Enemy of the State:** Villagers refuse to trade with you, and naturally spawned Iron Golems will attack on sight.  
 > 🔴 **Heavyweight:** You are too heavy to ride on any mobs.
 
 ### Requirements
