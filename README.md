@@ -6,15 +6,15 @@ An add-on to the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins)
 >
 > Ravagers are fierce creatures with incredible strength and durability. However, their size and intimidating reputation come with consequences.
 >
-> <span style="color:#2E7D32">&#43; **Ram:**</span> You are able to give your attacks extreme knockback for a few seconds.  
-> <span style="color:#2E7D32">&#43; **Illager:**</span> Illager-aligned mobs will not attack you unless provoked.  
-> <span style="color:#2E7D32">&#43; **Tough:**</span> Your natural bulk gives you increased health (+4 hearts) and armor (+2 armor bars).
+> 🟢 **Ram:** You are able to give your attacks extreme knockback for a few seconds.  
+> 🟢 **Illager:** Illager-aligned mobs will not attack you unless provoked.  
+> 🟢 **Tough:** Your natural bulk gives you increased health (+4 hearts) and armor (+2 armor bars).
 >
-> <span style="color:#F57F17">= **Giant:**</span> You are 2.5 times the size of a normal human.
+> 🟡 **Giant:** You are 2.5 times the size of a normal human.
 >
-> <span style="color:#B00020">&#45; **Four-Legged:**</span> Your clumsy hands are unable to use more than one item at a time. You can't use any item in your offhand.  
-> <span style="color:#B00020">&#45; **Enemy of the State:**</span> Villagers refuse to trade with you, and Iron Golems will attack on sight.  
-> <span style="color:#B00020">&#45; **Heavyweight:**</span> You are too heavy to ride on any mobs.
+> 🔴 **Four-Legged:** Your clumsy hands are unable to use more than one item at a time. You can't use any item in your offhand.  
+> 🔴 **Enemy of the State:** Villagers refuse to trade with you, and Iron Golems will attack on sight.  
+> 🔴 **Heavyweight:** You are too heavy to ride on any mobs.
 
 ### Requirements
 * [Fabric loader](https://fabricmc.net/)
