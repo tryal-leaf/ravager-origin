@@ -2,7 +2,7 @@
 
 An add-on to the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins) mod. Enables the Ravager origin.
 
-> ###Ravager
+> ### Ravager
 >
 > Ravagers are fierce creatures with incredible strength and durability. However, their size and intimidating reputation come with consequences.
 >
@@ -16,12 +16,12 @@ An add-on to the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins)
 > <span style="color:#B00020">&#45; **Enemy of the State:**</span> Villagers refuse to trade with you, and Iron Golems will attack on sight.  
 > <span style="color:#B00020">&#45; **Heavyweight:**</span> You are too heavy to ride on any mobs.
 
-###Requirements
+### Requirements
 * [Fabric loader](https://fabricmc.net/)
 * [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
 * [Origins](https://www.curseforge.com/minecraft/mc-mods/origins)
 * [Pehkui](https://www.curseforge.com/minecraft/mc-mods/pehkui)
 
-###Credits
+### Credits
 
 Idea by kalkplaat, implementation by me.
