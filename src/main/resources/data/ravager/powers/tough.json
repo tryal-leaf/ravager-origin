@@ -1,19 +1,37 @@
 {
-  "type": "origins:attribute",
-  "modifiers": [
-    {
-      "name": "Max health increase",
-      "attribute": "minecraft:generic.max_health",
-      "value": 8.0,
-      "operation": "addition"
-    },
-    {
-      "name": "Armor increase",
-      "attribute": "minecraft:generic.armor",
-      "value": 4,
-      "operation": "addition"
+  "type": "origins:multiple",
+  "attribute_changes": {
+    "type": "origins:attribute",
+    "modifiers": [
+      {
+        "name": "Max health increase",
+        "attribute": "minecraft:generic.max_health",
+        "value": 8.0,
+        "operation": "addition"
+      },
+      {
+        "name": "Armor increase",
+        "attribute": "minecraft:generic.armor",
+        "value": 4,
+        "operation": "addition"
+      }
+    ]
+  },
+  "add_missing_health": {
+    "type": "origins:action_on_callback",
+    "entity_action_added": {
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:health",
+        "comparison": "==",
+        "compare_to": 20.0
+      },
+      "if_action": {
+        "type": "origins:heal",
+        "amount": 8.0
+      }
     }
-  ],
+  },
   "name": "Tough",
   "description": "Your natural bulk gives you increased health and armor."
 }
