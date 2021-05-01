@@ -14,7 +14,7 @@ An add-on to the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins)
 >
 > 🔴 **Four-Legged:** Your clumsy hands are unable to use more than one item at a time. You can't use any item in your offhand.  
 > 🔴 **Enemy of the State:** Villagers refuse to trade with you, and naturally spawned Iron Golems will attack on sight.  
-> 🔴 **Heavyweight:** You are too heavy to ride on any mobs.
+> 🔴 **Heavyweight:** You are too heavy to ride on any mobs or in boats.
 
 ### Requirements
 * [Fabric loader](https://fabricmc.net/)
