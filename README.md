@@ -10,7 +10,7 @@ An add-on to the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins)
 > 🟢 **Illager:** Illager-aligned mobs will not attack you unless provoked.  
 > 🟢 **Tough:** Your natural bulk gives you increased health (+4 hearts) and armor (+2 armor bars).
 >
-> 🟡 **Giant:** You are 2.5 times the size of a normal human.
+> 🟡 **Giant:** You are 2.5 blocks tall.
 >
 > 🔴 **Four-Legged:** Your clumsy hands are unable to use more than one item at a time. You can't use any item in your offhand.  
 > 🔴 **Enemy of the State:** Villagers refuse to trade with you, and naturally spawned Iron Golems will attack on sight.  
