@@ -12,7 +12,7 @@ import tryalleaf.ravager.power.RavagerPowers;
 public class HorseBaseEntityMixin {
 
   @Inject(method = "putPlayerOnBack", at = @At(value = "INVOKE"), cancellable = true)
-  protected void putPlayerOnBack(PlayerEntity player, CallbackInfo ci) {
+  protected void preventRiding(PlayerEntity player, CallbackInfo ci) {
     if (RavagerPowers.HEAVYWEIGHT.isActive(player)) {
       ci.cancel();
     }

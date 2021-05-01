@@ -17,7 +17,7 @@ public class StriderEntityMixin {
           value = "INVOKE",
           target = "Lnet/minecraft/entity/player/PlayerEntity;startRiding(Lnet/minecraft/entity/Entity;)Z",
       ordinal = 0))
-  public boolean startRiding(PlayerEntity player, Entity entity) {
+  public boolean preventRiding(PlayerEntity player, Entity entity) {
     if (RavagerPowers.HEAVYWEIGHT.isActive(player)) {
       return false;
     }

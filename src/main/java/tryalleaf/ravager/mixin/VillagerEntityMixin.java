@@ -14,7 +14,7 @@ import tryalleaf.ravager.power.RavagerPowers;
 public class VillagerEntityMixin {
 
   @Inject(method = "interactMob", at = @At(value = "INVOKE"), cancellable = true)
-  public void interactMob(PlayerEntity player, Hand hand, CallbackInfoReturnable<ActionResult> cir) {
+  public void preventTrading(PlayerEntity player, Hand hand, CallbackInfoReturnable<ActionResult> cir) {
     if (RavagerPowers.ENEMY_OF_THE_STATE.isActive(player)) {
       cir.setReturnValue(ActionResult.FAIL);
     }

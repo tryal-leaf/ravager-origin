@@ -20,7 +20,7 @@ public abstract class IronGolemEntityMixin extends GolemEntity {
   }
 
   @Inject(method = "initGoals", at = @At("HEAD"), cancellable = true)
-  protected void initGoals(CallbackInfo ci) {
+  protected void addIllagerPlayerTracking(CallbackInfo ci) {
     targetSelector.add(
         /* priority */ 3,
         new FollowTargetGoal<>(
