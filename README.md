@@ -24,4 +24,4 @@ An add-on to the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins)
 
 ### Credits
 
-Idea by kalkplaat, implementation by me.
+[Idea](https://www.reddit.com/r/OriginsSMP/comments/ms4xpd/reworked_version_of_my_ravager_concept_that_makes/) by kalkplaat, implementation by me.
