@@ -24,19 +24,9 @@
       ]
     },
     "entity_action": {
-      "type": "origins:and",
-      "actions": [
-        {
-          "type": "origins:execute_command",
-          "command": "team join ravager-angry @e[team=ravager,distance=..16]",
-          "permission_level": 4
-        },
-        {
-          "type": "origins:execute_command",
-          "command": "team join ravager @s",
-          "permission_level": 4
-        }
-      ]
+      "type": "origins:execute_command",
+      "command": "team join ravager-angry @e[type=!minecraft:player,team=ravager,distance=..16]",
+      "permission_level": 4
     },
     "cooldown": 0,
     "hud_render": {
