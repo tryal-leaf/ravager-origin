@@ -69,6 +69,34 @@
       "should_render": false
     }
   },
+  "leaf_break_speed": {
+    "type": "origins:modify_break_speed",
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "ravager:ram_duration",
+          "comparison": ">",
+          "compare_to": 0
+        },
+        {
+          "type": "origins:resource",
+          "resource": "ravager:ram_cooldown",
+          "comparison": "<=",
+          "compare_to": 0
+        }
+      ]
+    },
+    "block_condition": {
+      "type": "origins:in_tag",
+      "tag": "ravager:leaves"
+    },
+    "modifier": {
+      "operation": "multiply_base",
+      "value": 6.0
+    }
+  },
   "cooldown": {
     "type": "origins:cooldown",
     "cooldown": 300,
