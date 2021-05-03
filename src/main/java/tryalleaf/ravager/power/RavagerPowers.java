@@ -9,7 +9,7 @@ public class RavagerPowers {
   public static final PowerType<Power> ENEMY_OF_THE_STATE =
       new PowerTypeReference<>(new Identifier("ravager", "enemy_of_the_state"));
   public static final PowerType<Power> HEAVYWEIGHT =
-      new PowerTypeReference<>(new Identifier("ravager", "heavyweight"));
+      new PowerTypeReference<>(new Identifier("ravager", "heavyweight_no_riding"));
   public static final PowerType<Power> NO_OFFHAND =
       new PowerTypeReference<>(new Identifier("ravager", "no_offhand"));
 }

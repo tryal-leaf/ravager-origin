@@ -1,5 +1,15 @@
 {
-  "type": "origins:simple",
+  "type": "origins:multiple",
+  "no_riding": {
+    "type": "origins:simple"
+  },
+  "swim_speed": {
+    "type": "origins:modify_swim_speed",
+    "modifier": {
+      "operation": "addition",
+      "value": -0.005
+    }
+  },
   "name": "Heavyweight",
-  "description": "You are too heavy to ride on any mobs or in boats."
+  "description": "You are too heavy to ride on any mobs or in boats and have reduced speed in water."
 }
