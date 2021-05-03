@@ -1,41 +1,91 @@
 {
-  "type": "origins:active_self",
-  "condition": {
-    "type": "origins:resource",
-    "resource": "ravager:ram_cooldown",
-    "comparison": "<=",
-    "compare_to": 0
-  },
-  "entity_action": {
-    "type": "origins:and",
-    "actions": [
-      {
-        "type": "origins:and",
-        "actions": [
-          {
-            "type": "origins:trigger_cooldown",
-            "power": "ravager:ram_duration"
-          },
-          {
-            "type": "origins:execute_command",
-            "command": "playsound minecraft:entity.ravager.roar master @a[distance=..20] ~ ~ ~ 1 1",
-            "permission_level": 4
-          }
-        ]
-      },
-      {
-        "type": "origins:delay",
-        "action": {
-          "type": "origins:trigger_cooldown",
-          "power": "ravager:ram_cooldown"
+  "type": "origins:multiple",
+  "active": {
+    "type": "origins:active_self",
+    "condition": {
+      "type": "origins:resource",
+      "resource": "ravager:ram_cooldown",
+      "comparison": "<=",
+      "compare_to": 0
+    },
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:and",
+          "actions": [
+            {
+              "type": "origins:trigger_cooldown",
+              "power": "ravager:ram_duration"
+            },
+            {
+              "type": "origins:execute_command",
+              "command": "playsound minecraft:entity.ravager.roar master @a[distance=..20] ~ ~ ~ 1 1",
+              "permission_level": 4
+            }
+          ]
         },
-        "ticks": 60
-      }
-    ]
+        {
+          "type": "origins:delay",
+          "action": {
+            "type": "origins:trigger_cooldown",
+            "power": "ravager:ram_cooldown"
+          },
+          "ticks": 60
+        }
+      ]
+    },
+    "cooldown": 0,
+    "hud_render": {
+      "should_render": false
+    }
   },
-  "cooldown": 0,
-  "hud_render": {
-    "should_render": false
+  "knockback": {
+    "type": "origins:target_action_on_hit",
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "ravager:ram_duration",
+          "comparison": ">",
+          "compare_to": 0
+        },
+        {
+          "type": "origins:resource",
+          "resource": "ravager:ram_cooldown",
+          "comparison": "<=",
+          "compare_to": 0
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:add_velocity",
+      "z": 3.5,
+      "space": "velocity_horizontal_normalized"
+    },
+    "cooldown": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "cooldown": {
+    "type": "origins:cooldown",
+    "cooldown": 300,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+      "bar_index": 8
+    }
+  },
+  "duration": {
+    "type": "origins:cooldown",
+    "cooldown": 60,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+      "bar_index": 16
+    }
   },
   "name": "Ram",
   "description": "You are able to give your attacks extreme knockback for a few seconds."

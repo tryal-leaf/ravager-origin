@@ -6,10 +6,7 @@
     "ravager:no_offhand",
     "ravager:illager",
     "ravager:enemy_of_the_state",
-    "ravager:ram",
-    "ravager:ram_knockback",
-    "ravager:ram_cooldown",
-    "ravager:ram_duration"
+    "ravager:ram"
   ],
   "icon": "minecraft:iron_horse_armor",
   "order": 0,
