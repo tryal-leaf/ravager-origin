@@ -17,6 +17,7 @@ An add-on to the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins)
 > 🔴 **Heavyweight:** You are too heavy to ride on any mobs or in boats and have reduced speed in water.
 
 ### Requirements
+
 * [Fabric loader](https://fabricmc.net/)
 * [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
 * [Origins](https://www.curseforge.com/minecraft/mc-mods/origins)
@@ -24,4 +25,8 @@ An add-on to the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins)
 
 ### Credits
 
-[Idea](https://www.reddit.com/r/OriginsSMP/comments/ms4xpd/reworked_version_of_my_ravager_concept_that_makes/) by kalkplaat, implementation by me.
+[Idea](https://www.reddit.com/r/OriginsSMP/comments/ms4xpd/reworked_version_of_my_ravager_concept_that_makes/) by kalkplaat, implementation by tryal-leaf.
+
+### Source Code
+
+https://github.com/tryal-leaf/ravager-origin
