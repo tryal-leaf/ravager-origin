@@ -16,6 +16,10 @@ An add-on to the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins)
 > 🔴 **Enemy of the State:** Villagers refuse to trade with you, and naturally spawned Iron Golems will attack on sight.  
 > 🔴 **Heavyweight:** You are too heavy to ride on any mobs or in boats and have reduced speed in water.
 
+### Download
+
+The latest modpack download, `ravager-origin-X.X.X.jar`, can be found in the [releases page](https://github.com/tryal-leaf/ravager-origin/releases).
+
 ### Requirements
 
 * [Fabric loader](https://fabricmc.net/)
